@@ -46,23 +46,17 @@ The CPU utilization metric as captured by the debugging hook:
 
 ## REFERENCES
 -----------------------------------------------------------------------------------------------------
+An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, 2021. https://arxiv.org/abs/2010.11929
 
-Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xi-
-aohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
-Heigold, Sylvain Gelly, et al. An image is worth 16x16 words: Transformers for
-image recognition at scale. arXiv preprint arXiv:2010.11929, 2020.
+Learning Multiple Layers of Features from Tiny Images, 2009. https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf 
 
-Alex Krizhevsky. Learning Multiple Layers of Features from Tiny Images. Technical report, University of Toronto, 2009. Available at: https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf 
+Automatic differentiation in PyTorch, 2017. https://openreview.net/pdf?id=BJJsrmfCZ
 
-Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in PyTorch. In Proceedings of the NIPS 2017 Workshop, 2017.
+Training data-efficient image transformers & distillation through attention, 2020. http://arxiv.org/abs/2012.12877  
 
-Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, and Hervé Jégou. 2020. Training data-efficient image transformers & distillation through attention. arXiv [cs.CV]. Retrieved from http://arxiv.org/abs/2012.12877  
+Designing network design spaces. Conference on Computer Vision and Pattern Recognition, 2020. https://arxiv.org/pdf/2003.13678
 
-Ilija Radosavovic, Raj Prateek Kosaraju, Ross B. Girshick, Kaiming He, and Piotr
-Doll´ ar. Designing network design spaces. Conference on Computer Vision and Pattern
-Recognition, 2020
-
-J. D. Hunter. Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3):90–95, 2007. doi:10.1109/MCSE.2007.55. 
+Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3):90–95, 2007. doi:10.1109/MCSE.2007.55. 
 
 
 ## ACKNOWLEDGEMENTS
