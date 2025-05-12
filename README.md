@@ -7,7 +7,7 @@ The motivation for this paper is that in order to achieve comparable performance
 
 The authors of the paper hypothesize that by incorporating distillation (aka teacher student training) through the addition of a class token and distillation token to the ViT architecture, we can achieve comparable performance to CNNs on image classification benchmarks without training it on such extraordinary amounts of data. Our goal is to test the hypothesis and achieve the results outlined in the original DeiT paper, with much more limited computational resources and training time. 
 
-## Obtaining our Dataset
+## DATASET
 -----------------------------------------------------------------------------------------------------
 To train and test our models, we use the [Cifar-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html ), and implement it into our model using the PyTorch built-in functionality
 
