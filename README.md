@@ -3,9 +3,7 @@
 ## INTRODUCTION
 -----------------------------------------------------------------------------------------------------
 
-The motivation for this paper is that in order to achieve comparable performance with CNNs on image classification tasks, ViTs require a huge amount of training data to understand local patterns and don’t have built in biases like in CNNs. However, due to better scalability and understanding of global context, ViTs are still desirable. Thus, we and the authors of this paper seek to find a potential solution for the data-hungriness of the ViTs.
-
-The authors of the paper hypothesize that by incorporating distillation (aka teacher student training) through the addition of a class token and distillation token to the ViT architecture, we can achieve comparable performance to CNNs on image classification benchmarks without training it on such extraordinary amounts of data. Our goal is to test the hypothesis and achieve the results outlined in the original DeiT paper, with much more limited computational resources and training time. 
+The motivation for this repository is to test the hypothesis and achieve the results outlined in the original DeiT paper, DeiTs are the names of models with architecture for a data-efficient ViT with comparable performances to CNNs. 
 
 ## DATASET
 -----------------------------------------------------------------------------------------------------
