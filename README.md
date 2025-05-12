@@ -20,13 +20,13 @@ To train and test our models, we use the [Cifar-10 Dataset](https://www.cs.toron
 -----------------------------------------------------------------------------------------------------
 
 Explanations of the different files used in the project
-• code/: A directory containing our implementation code for each model 
-• results/: A directory containing the results of our re-implementation
-• poster/: A directory containing a PDF of the poster related to the paper which we presented in the course
-• report/: A PDF of a paper style final report that complements our poster
-• LICENSE: A file specifying the license under which your code is released (e.g., MIT,
+* `code/`: A directory containing our implementation code for each model 
+* `results/`: A directory containing the results of our re-implementation
+* `poster/`: A directory containing a PDF of the poster related to the paper which we presented in the course
+* `report/`: A PDF of a paper style final report that complements our poster
+* `LICENSE`: A file specifying the license under which your code is released (e.g., MIT,
 Apache 2.0).
-• .gitignore: A file specifying files or directories that should be ignored by Git
+* `.gitignore`: A file specifying files or directories that should be ignored by Git
 
     
 ## INSIGHTS
