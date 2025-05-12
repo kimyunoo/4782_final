@@ -34,7 +34,7 @@ Apache 2.0).
 * `.gitignore`: A file specifying files or directories that should be ignored by Git
 
     
-## INSIGHTS
+## INSIGHTS - TO BE EDITED
 -----------------------------------------------------------------------------------------------------
 Each iteration of the hyperparameter tuning job focused on improving the accuracy(as defined in the optimization of `objective_metric_name`)
 
