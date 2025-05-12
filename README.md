@@ -59,7 +59,7 @@ Training data-efficient image transformers & distillation through attention, 202
 
 Designing network design spaces. Conference on Computer Vision and Pattern Recognition, 2020. https://arxiv.org/pdf/2003.13678
 
-Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3):90–95, 2007. doi:10.1109/MCSE.2007.55. 
+Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3):90–95, 2007. https://ieeexplore.ieee.org/document/4160265
 
 
 ## ACKNOWLEDGEMENTS
