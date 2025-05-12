@@ -16,8 +16,8 @@ To train and test our models, we use the [Cifar-10 Dataset](https://www.cs.toron
 
 1) Clone the repository to your local machine
 2) Navigate into the correct folder where the respository is stored
-3) Install the required packages `matplotlib` and  `pytorch` using the following \newline <br />
-   `pip install matplotlib` <br />
+3) Install the required packages `matplotlib` and  `pytorch` using the following \newline 
+   `pip install matplotlib` 
    `pip install torch` 
 4) Navigate to the `code/` folder and run the named file associated with the desired model 
 
