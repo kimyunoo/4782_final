@@ -15,7 +15,7 @@ We aim to reproduce a subsection of the models tested in the paper. We specifica
 -----------------------------------------------------------------------------------------------------
 Explanations of the different files used in the project
 * `code/`: A directory containing our implementation code for each model
-* * `data/`: A directory containing information about our dataset 
+* `data/`: A directory containing information about our dataset 
 * `results/`: A directory containing the results of our re-implementation
 * `poster/`: A directory containing a PDF of the poster related to the paper which we presented in the course
 * `report/`: A PDF of a paper style final report that complements our poster
