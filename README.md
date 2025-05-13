@@ -7,7 +7,8 @@ The motivation for this repository is to test the hypothesis and achieve the res
 
 ## CHOSEN RESULT
 -----------------------------------------------------------------------------------------------------
-We aim to reproduce a subsection of the models tested in the paper. We specifically want to test their core findings related to their DeiT-Ti models with their distillation architecture and without their distillation architecture. 
+![Table of Model Accuracies from Original Paper](https://drive.google.com/file/d/1_v0tIZxVJVuxrC9ZUx3q2pUmYXHhi377/view?usp=sharing "Relevant Section of Paper with their Findings")
+We aim to reproduce a subsection of the models tested in the paper. We specifically want to test their core findings related to their DeiT-Ti models with their distillation architecture and without their distillation architecture listed above. 
 
 ## DATASET
 -----------------------------------------------------------------------------------------------------
@@ -50,7 +51,7 @@ Apache 2.0).
     
 ## INSIGHTS 
 -----------------------------------------------------------------------------------------------------
-![Table of Model Accuracies](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
+![Table of Model Accuracies from Our Implementation](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
 
 * Our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss.
    * This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch
