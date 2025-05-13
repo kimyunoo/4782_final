@@ -17,7 +17,7 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
 3) Install the required packages `matplotlib` and  `pytorch` using the following <br/>
    `pip install matplotlib` <br/>
    `pip install torch` 
-4) Navigate to the `code/` folder and decide on the model you would like to run
+4) Navigate to the `code/` folder and open the 
 5) Change the `distill_mode` variable of type string to one of the following desired model types
    * none (DeiT-Ti - no distillation)
    * soft (DeiT-Ti - usual distillation)
