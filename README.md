@@ -34,19 +34,21 @@ Used CIFAR-10 as training + test dataset, regnetx-400mf (5M parameters) as teach
 1) Clone the repository to your local machine
 2) Navigate into the correct folder where the respository is stored
 3) If necessary, install required dependencies:
+    ```
     pip install torch torchvision pyyaml huggingface_hub tqdm safetensors fsspec filelock packaging requests typing_extensions networkx jinja2
-4) Navigate to the `code/` folder and open the notebook labeled `deit_model_code.ipynb`
-5) Ensure you have at least 2 hours of T4 GPU usage for each model you would like to train 
-6) Change the `distill_mode` variable of type string to one of the following desired model types
+    ```
+5) Navigate to the `code/` folder and open the notebook labeled `deit_model_code.ipynb`
+6) Ensure you have at least 2 hours of T4 GPU usage for each model you would like to train 
+7) Change the `distill_mode` variable of type string to one of the following desired model types
    * none (DeiT-Ti - no distillation)
    * soft (DeiT-Ti - usual distillation)
    * hard (DeiT-Ti - hard distillation)
    * class (DeiT-Ti ⚗️ - class embedding)
    * distill (DeiT-Ti ⚗️ - distil embedding)
    * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
-7) Run the notebook
-8) If you would like to run the CNN model baseline, open the notebook labeled `cnn_baseline.ipynb`
-9) Ensure you have required packages, and then run the notebook
+8) Run the notebook
+9) If you would like to run the CNN model baseline, open the notebook labeled `cnn_baseline.ipynb`
+10) Ensure you have required packages, and then run the notebook
   
     
 ## 6. INSIGHTS 
