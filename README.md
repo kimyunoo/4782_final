@@ -32,7 +32,7 @@ Used CIFAR-10 as training + test dataset, regnetx-400mf (5M parameters) as teach
 -----------------------------------------------------------------------------------------------------
 
 1) Clone the repository to your local machine
-2) Navigate into the correct folder where the respository is stored
+2) Navigate into the correct folder where the repository is stored
 3) If necessary, install required dependencies:
     ```
     pip install torch torchvision pyyaml huggingface_hub tqdm safetensors fsspec filelock packaging requests typing_extensions networkx jinja2
