@@ -45,11 +45,12 @@ Apache 2.0).
 ## INSIGHTS 
 -----------------------------------------------------------------------------------------------------
 ![Table of Model Accuracies](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
-Interestingly, **the model using both class and distillation tokens with hard distillation loss did not perform as well as the model with no distillation loss**. We trained the same architecture with soft distillation loss instead, which achieved a better validation accuracy (69.19%, the highest out of all the distillation modes). **We suspect that this may be because our teacher is trained on ImageNet rather than CIFAR-10, so the domain mismatch may cause differences with the paper’s observations** (CIFAR-10 has 10 classes, while ImageNet has 1000).
 
-We achieved 88.46% validation accuracy when we trained a ResNet-18, a CNN, for 20 epochs on the same task. **Thus, our DeiT model is unfortunately not comparable to CNN performance.** This may be due to the teacher domain mismatch as well as having less data augmentation and compute than in the original paper. **We can also observe that after 20 epochs the test accuracy for the model with class and distillation tokens and soft distillation loss still has a positive slope and does not seem to have plateaued yet.** So, we can assume if we trained the full number of epochs it would have achieved an even higher validation accuracy, perhaps comparable to that achieved in the paper. 
+Some interesting insights are that our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss. This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch. This is also supported by the increase in accuracy to 69.19% when trained with soft distillation. <br/> 
 
-Additional areas of research could also understand what teacher model to train with, and continue comparisons from there. We could also retrain the models on ImageNet given more resources. 
+Another interesting insight is our model accuracies did not plateau, indicating we could have trained for longer than 20 epochs to achieve a higher validation accuracy (perhaps one comparable to that in the paper). <br/> 
+
+Additional areas of research could be retraining the models on ImageNet given more resources, and looking into different teacher models to train the ViT with. 
 
 ## REFERENCES
 -----------------------------------------------------------------------------------------------------
