@@ -56,6 +56,10 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
 -----------------------------------------------------------------------------------------------------
 ![Table of Model Accuracies from Our Implementation](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
 
+After running our code, this is a sample of the results we got from each implementation. You can also expect to see a dotted line graph of the accuracy of the model over 20 epochs (listed in our paper). 
+
+## CONCLUSION 
+-----------------------------------------------------------------------------------------------------
 * Our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss.
    * This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch
    * This hypothesis is supported by the increase in accuracy to 69.19% when trained with soft distillation. 
