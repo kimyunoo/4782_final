@@ -25,7 +25,7 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
    * class (DeiT-Ti ⚗️ - class embedding)
    * distill (DeiT-Ti ⚗️ - distil embedding)
    * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
-6) Run the model 
+6) Run the notebook 
 
 ## FILE INFO
 -----------------------------------------------------------------------------------------------------
