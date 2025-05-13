@@ -17,7 +17,15 @@ To train and test our models, we use the [Cifar-10 Dataset](https://www.cs.toron
 3) Install the required packages `matplotlib` and  `pytorch` using the following <br/>
    `pip install matplotlib` <br/>
    `pip install torch` 
-4) Navigate to the `code/` folder and run the named file associated with the desired model 
+4) Navigate to the `code/` folder and decide on the model you would like to run
+5) Change the `distill_mode` variable to one of the following desired model types
+  * none (DeiT-Ti - no distillation)
+  * soft (DeiT-Ti - usual distillation)
+  * hard (DeiT-Ti - hard distillation)
+  * class (DeiT-Ti ⚗️ - class embedding)
+  * distill (DeiT-Ti ⚗️ - distil embedding)
+  * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
+6) Run the model 
 
 ## FILE INFO
 -----------------------------------------------------------------------------------------------------
@@ -32,20 +40,13 @@ Apache 2.0).
 * `.gitignore`: A file specifying files or directories that should be ignored by Git
 
     
-## INSIGHTS - TO BE EDITED
+## INSIGHTS 
 -----------------------------------------------------------------------------------------------------
-Each iteration of the hyperparameter tuning job focused on improving the accuracy(as defined in the optimization of `objective_metric_name`)
+Interestingly, the model using both class and distillation tokens with hard distillation loss did not perform as well as the model with no distillation loss. We trained the same architecture with soft distillation loss instead, which achieved a better validation accuracy (69.19%, the highest out of all the distillation modes). We suspect that this may be because our teacher is trained on ImageNet rather than CIFAR-10, so the domain mismatch may cause differences with the paper’s observations (CIFAR-10 has 10 classes, while ImageNet has 1000).
 
-![hpo](images/Status%20of%20hyperparameter%20Tuning%20Jobs.png)
+We achieved 88.46% validation accuracy when we trained a ResNet-18, a CNN, for 20 epochs on the same task. Thus, our DeiT model is unfortunately not comparable to CNN performance. This may be due to the teacher domain mismatch as well as having less data augmentation and compute than in the original paper. We can also observe that after 20 epochs the test accuracy for the model with class and distillation tokens and soft distillation loss still has a positive slope and does not seem to have plateaued yet, so we can assume if we trained the full number of epochs it would have achieved an even higher validation accuracy, perhaps comparable to that achieved in the paper. 
 
-The CPU utilization metric as captured by the debugging hook:
-
-![de](images/CPU%20Utilization.png)
-
-
-**NOTE:** An effort was made previously to accomplish the classification task using a `resnet18` model. However, both the training and testing inferences by this model were inaccurate. This indicated that the underlying model is not able to handle the complexity of the classification problem.
-
-
+Additional areas of research could also understand what teacher model to train with, and continue comparisons from there. We could also retrain the models on ImageNet given more resources. 
 
 ## REFERENCES
 -----------------------------------------------------------------------------------------------------
