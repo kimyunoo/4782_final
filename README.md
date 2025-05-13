@@ -19,12 +19,12 @@ To train and test our models, we use the [Cifar-10 Dataset](https://www.cs.toron
    `pip install torch` 
 4) Navigate to the `code/` folder and decide on the model you would like to run
 5) Change the `distill_mode` variable to one of the following desired model types
-  * none (DeiT-Ti - no distillation)
-  * soft (DeiT-Ti - usual distillation)
-  * hard (DeiT-Ti - hard distillation)
-  * class (DeiT-Ti ⚗️ - class embedding)
-  * distill (DeiT-Ti ⚗️ - distil embedding)
-  * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
+        * none (DeiT-Ti - no distillation)
+        * soft (DeiT-Ti - usual distillation)
+        * hard (DeiT-Ti - hard distillation)
+        * class (DeiT-Ti ⚗️ - class embedding)
+        * distill (DeiT-Ti ⚗️ - distil embedding)
+        * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
 6) Run the model 
 
 ## FILE INFO
