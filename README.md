@@ -46,11 +46,12 @@ Apache 2.0).
 -----------------------------------------------------------------------------------------------------
 ![Table of Model Accuracies](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
 
-Some interesting insights are that our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss. This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch. This is also supported by the increase in accuracy to 69.19% when trained with soft distillation. <br/> 
-
-Another interesting insight is our model accuracies did not plateau, indicating we could have trained for longer than 20 epochs to achieve a higher validation accuracy (perhaps one comparable to that in the paper). <br/> 
-
-Additional areas of research could be retraining the models on ImageNet given more resources, and looking into different teacher models to train the ViT with. 
+* Our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss.
+   * This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch
+   * This hypothesis is supported by the increase in accuracy to 69.19% when trained with soft distillation. 
+* Our model accuracies did not plateau
+   * Shows we could train for longer than 20 epochs to achieve a higher validation accuracy
+* Further research includes retraining on ImageNet or looking into different teacher models
 
 ## REFERENCES
 -----------------------------------------------------------------------------------------------------
