@@ -17,7 +17,7 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
 3) Install the required packages `matplotlib` and  `pytorch` using the following <br/>
    `pip install matplotlib` <br/>
    `pip install torch` 
-4) Navigate to the `code/` folder and open the 
+4) Navigate to the `code/` folder and open the notebook labeled `deit_model_code.ipynb`
 5) Change the `distill_mode` variable of type string to one of the following desired model types
    * none (DeiT-Ti - no distillation)
    * soft (DeiT-Ti - usual distillation)
@@ -25,7 +25,10 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
    * class (DeiT-Ti ⚗️ - class embedding)
    * distill (DeiT-Ti ⚗️ - distil embedding)
    * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
-6) Run the notebook 
+6) Run the notebook
+7) If you would like to run the CNN model baseline, open the notebook labeled `cnn_baseline.ipynb`
+8) Ensure you have required packages, and then run the notebook
+
 
 ## FILE INFO
 -----------------------------------------------------------------------------------------------------
