@@ -1,18 +1,17 @@
 # DeiT: Training ViTs Using Distillation through Attention
 
-## 1 INTRODUCTION
+## 1. INTRODUCTION
 -----------------------------------------------------------------------------------------------------
 
 The motivation for this repository is to test the hypothesis and achieve the results outlined in the original DeiT paper. DeiTs are the names of models with architecture for a data-efficient ViT with comparable performances to CNNs, and the primary purpose of the paper **Training data-efficient image transformers & distillation through attention** cited below.
 
-## 2 CHOSEN RESULT
+## 2. CHOSEN RESULT
 -----------------------------------------------------------------------------------------------------
 ![Table of Model Accuracies from Original Paper](https://drive.google.com/file/d/1_v0tIZxVJVuxrC9ZUx3q2pUmYXHhi377/view?usp=sharing "Relevant Section of Paper with their Findings")
 
 We aim to reproduce a subsection of the models tested in the paper. We specifically want to test their core findings related to their DeiT-Ti models with their distillation architecture and without their distillation architecture listed above. 
 
-
-## 3 GITHUB CONTENTS
+## 3. GITHUB CONTENTS
 -----------------------------------------------------------------------------------------------------
 Explanations of the different files used in the project
 * `code/`: A directory containing our implementation code for each model 
@@ -23,7 +22,10 @@ Explanations of the different files used in the project
 Apache 2.0).
 * `.gitignore`: A file specifying files or directories that should be ignored by Git
 
-## 5 REPRODUCTION STEPS
+## 4. RE-IMPLEMENTATION DETAILS
+-----------------------------------------------------------------------------------------------------
+
+## 5. REPRODUCTION STEPS
 -----------------------------------------------------------------------------------------------------
 
 1) Clone the repository to your local machine
@@ -47,13 +49,13 @@ Apache 2.0).
 9) Ensure you have required packages, and then run the notebook
    
     
-## 6 INSIGHTS 
+## 6. INSIGHTS 
 -----------------------------------------------------------------------------------------------------
 ![Table of Model Accuracies from Our Implementation](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
 
 After running our code, this is a sample of the results we got from each implementation. You can also expect to see a dotted line graph of the accuracy of the model over 20 epochs (listed in our paper). 
 
-## 7 CONCLUSION 
+## 7. CONCLUSION 
 -----------------------------------------------------------------------------------------------------
 * Our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss.
    * This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch
@@ -62,7 +64,7 @@ After running our code, this is a sample of the results we got from each impleme
    * Shows we could train for longer than 20 epochs to achieve a higher validation accuracy
 * Further research includes retraining on ImageNet or looking into different teacher models
 
-## 8 REFERENCES
+## 8. REFERENCES
 -----------------------------------------------------------------------------------------------------
 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, 2021. https://arxiv.org/abs/2010.11929
 
@@ -77,7 +79,7 @@ Designing network design spaces. Conference on Computer Vision and Pattern Recog
 Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3):90–95, 2007. https://ieeexplore.ieee.org/document/4160265
 
 
-## 9 ACKNOWLEDGEMENTS
+## 9. ACKNOWLEDGEMENTS
 -----------------------------------------------------------------------------------------------------
 
 Final assignment for Cornell Project Course CS4782 - Intro to Deep Learning, taught by Jennifer Sun and Kilian Weinberger 
