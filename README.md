@@ -5,6 +5,10 @@
 
 The motivation for this repository is to test the hypothesis and achieve the results outlined in the original DeiT paper. DeiTs are the names of models with architecture for a data-efficient ViT with comparable performances to CNNs, and the primary purpose of the paper **Training data-efficient image transformers & distillation through attention** cited below.
 
+## CHOSEN RESULT
+-----------------------------------------------------------------------------------------------------
+We aim to reproduce a subsection of the models tested in the paper. We specifically want to test their core findings related to their DeiT-Ti models with their distillation architecture and without their distillation architecture. 
+
 ## DATASET
 -----------------------------------------------------------------------------------------------------
 To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html ), and implement it into our model using the PyTorch built-in functionality
