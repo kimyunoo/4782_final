@@ -3,7 +3,7 @@
 ## INTRODUCTION
 -----------------------------------------------------------------------------------------------------
 
-The motivation for this repository is to test the hypothesis and achieve the results outlined in the original DeiT paper, DeiTs are the names of models with architecture for a data-efficient ViT with comparable performances to CNNs. 
+The motivation for this repository is to test the hypothesis and achieve the results outlined in the original DeiT paper. DeiTs are the names of models with architecture for a data-efficient ViT with comparable performances to CNNs, and the primary purpose of the paper **Training data-efficient image transformers & distillation through attention** cited below.
 
 ## DATASET
 -----------------------------------------------------------------------------------------------------
