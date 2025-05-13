@@ -60,7 +60,7 @@ After running our code, this is a sample of the results we got from each impleme
 ## 7. CONCLUSION 
 -----------------------------------------------------------------------------------------------------
 * Our model with both class+distillation tokens and model with hard distillation did not perform as well as the model with no distillation loss.
-   * This could be becuase our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch
+   * This could be because our teacher is trained on ImageNet rather than CIFAR-10, leading to a possible domain mismatch
    * This hypothesis is supported by the increase in accuracy to 69.19% when trained with soft distillation. 
 * Our model accuracies did not plateau
    * Shows we could train for longer than 20 epochs to achieve a higher validation accuracy
