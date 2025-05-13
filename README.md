@@ -25,7 +25,7 @@ Apache 2.0).
 ## 4. RE-IMPLEMENTATION DETAILS
 -----------------------------------------------------------------------------------------------------
 
-Used CIFAR-10 as training + test dataset, regnetx-400mf (5M parameters) as teacher model for distillation. Used Top-1 accuracy on the CIFAR-10 test set as our evaluation metric. Ran for 20 epochs due to GPU constraints. Original paper trained 300 epochs on ImageNet, proposed 7200 epochs for CIFAR-10. Used RegNetY-16GF (84M parameters) as teacher model. 
+Used CIFAR-10 as training + test dataset, regnetx-400mf (5M parameters) as teacher model for distillation. Used Top-1 accuracy on the CIFAR-10 test set as our evaluation metric. Ran for 20 epochs due to GPU constraints. Original paper trained 300 epochs on ImageNet, proposed 7200 epochs for CIFAR-10, used RegNetY-16GF (84M parameters) as teacher model. 
 
 ## 5. REPRODUCTION STEPS
 -----------------------------------------------------------------------------------------------------
