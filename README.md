@@ -67,5 +67,7 @@ Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3):
 -----------------------------------------------------------------------------------------------------
 
 Final assignment for Cornell Project Course CS4782 - Intro to Deep Learning, taught by Jennifer Sun and Kilian Weinberger 
+
 ViT implementation inspired by CS4782 Assignment 3
+
 Reimplementation of "Training data-efficient image transformers & distillation through attention" by Touvron et al. at Facebook
