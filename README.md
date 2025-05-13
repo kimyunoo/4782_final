@@ -8,6 +8,7 @@ The motivation for this repository is to test the hypothesis and achieve the res
 ## CHOSEN RESULT
 -----------------------------------------------------------------------------------------------------
 ![Table of Model Accuracies from Original Paper](https://drive.google.com/file/d/1_v0tIZxVJVuxrC9ZUx3q2pUmYXHhi377/view?usp=sharing "Relevant Section of Paper with their Findings")
+
 We aim to reproduce a subsection of the models tested in the paper. We specifically want to test their core findings related to their DeiT-Ti models with their distillation architecture and without their distillation architecture listed above. 
 
 ## DATASET
