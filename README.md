@@ -32,7 +32,6 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
 
 ## FILE INFO
 -----------------------------------------------------------------------------------------------------
-
 Explanations of the different files used in the project
 * `code/`: A directory containing our implementation code for each model 
 * `results/`: A directory containing the results of our re-implementation
@@ -45,6 +44,7 @@ Apache 2.0).
     
 ## INSIGHTS 
 -----------------------------------------------------------------------------------------------------
+![Table of Model Accuracies](https://github.com/kimyunoo/4782_final/blob/main/results/table-of-accuracies-all-models.png "Our results from implementation trained for 20 epochs")
 Interestingly, **the model using both class and distillation tokens with hard distillation loss did not perform as well as the model with no distillation loss**. We trained the same architecture with soft distillation loss instead, which achieved a better validation accuracy (69.19%, the highest out of all the distillation modes). **We suspect that this may be because our teacher is trained on ImageNet rather than CIFAR-10, so the domain mismatch may cause differences with the paper’s observations** (CIFAR-10 has 10 classes, while ImageNet has 1000).
 
 We achieved 88.46% validation accuracy when we trained a ResNet-18, a CNN, for 20 epochs on the same task. **Thus, our DeiT model is unfortunately not comparable to CNN performance.** This may be due to the teacher domain mismatch as well as having less data augmentation and compute than in the original paper. **We can also observe that after 20 epochs the test accuracy for the model with class and distillation tokens and soft distillation loss still has a positive slope and does not seem to have plateaued yet.** So, we can assume if we trained the full number of epochs it would have achieved an even higher validation accuracy, perhaps comparable to that achieved in the paper. 
