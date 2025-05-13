@@ -16,7 +16,8 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
 2) Navigate into the correct folder where the respository is stored
 3) Install the required packages `matplotlib` and  `pytorch` using the following <br/>
    `pip install matplotlib` <br/>
-   `pip install torch` 
+   `pip install torch` <br/>
+   `pip install torchvision` <br/>
 4) Navigate to the `code/` folder and open the notebook labeled `deit_model_code.ipynb`
 5) Change the `distill_mode` variable of type string to one of the following desired model types
    * none (DeiT-Ti - no distillation)
