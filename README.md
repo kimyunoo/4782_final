@@ -7,7 +7,7 @@ The motivation for this repository is to test the hypothesis and achieve the res
 
 ## DATASET
 -----------------------------------------------------------------------------------------------------
-To train and test our models, we use the [Cifar-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html ), and implement it into our model using the PyTorch built-in functionality
+To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html ), and implement it into our model using the PyTorch built-in functionality
 
 ## PROJECT SETUP INSTRUCTIONS
 -----------------------------------------------------------------------------------------------------
