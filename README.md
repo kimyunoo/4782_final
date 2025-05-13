@@ -28,7 +28,7 @@ Apache 2.0).
 -----------------------------------------------------------------------------------------------------
 To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html ), and implement it into our model using the PyTorch built-in functionality
 
-## PROJECT SETUP INSTRUCTIONS
+## REPRODUCTION STEPS
 -----------------------------------------------------------------------------------------------------
 
 1) Clone the repository to your local machine
@@ -39,16 +39,17 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
    `pip install torchvision` <br/>
    `pip install numpy` <br/>
 4) Navigate to the `code/` folder and open the notebook labeled `deit_model_code.ipynb`
-5) Change the `distill_mode` variable of type string to one of the following desired model types
+5) Ensure you have at least 2 hours of T4 GPU usage for each model you would like to train 
+6) Change the `distill_mode` variable of type string to one of the following desired model types
    * none (DeiT-Ti - no distillation)
    * soft (DeiT-Ti - usual distillation)
    * hard (DeiT-Ti - hard distillation)
    * class (DeiT-Ti ⚗️ - class embedding)
    * distill (DeiT-Ti ⚗️ - distil embedding)
    * both (DeiT-Ti ⚗️ - class+distillation with hard teacher model)
-6) Run the notebook
-7) If you would like to run the CNN model baseline, open the notebook labeled `cnn_baseline.ipynb`
-8) Ensure you have required packages, and then run the notebook
+7) Run the notebook
+8) If you would like to run the CNN model baseline, open the notebook labeled `cnn_baseline.ipynb`
+9) Ensure you have required packages, and then run the notebook
    
     
 ## INSIGHTS 
