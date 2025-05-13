@@ -11,6 +11,19 @@ The motivation for this repository is to test the hypothesis and achieve the res
 
 We aim to reproduce a subsection of the models tested in the paper. We specifically want to test their core findings related to their DeiT-Ti models with their distillation architecture and without their distillation architecture listed above. 
 
+
+## GITHUB CONTENTS
+-----------------------------------------------------------------------------------------------------
+Explanations of the different files used in the project
+* `code/`: A directory containing our implementation code for each model 
+* `results/`: A directory containing the results of our re-implementation
+* `poster/`: A directory containing a PDF of the poster related to the paper which we presented in the course
+* `report/`: A PDF of a paper style final report that complements our poster
+* `LICENSE`: A file specifying the license under which your code is released (e.g., MIT,
+Apache 2.0).
+* `.gitignore`: A file specifying files or directories that should be ignored by Git
+
+
 ## DATASET
 -----------------------------------------------------------------------------------------------------
 To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html ), and implement it into our model using the PyTorch built-in functionality
@@ -36,19 +49,7 @@ To train and test our models, we use the [CIFAR-10 Dataset](https://www.cs.toron
 6) Run the notebook
 7) If you would like to run the CNN model baseline, open the notebook labeled `cnn_baseline.ipynb`
 8) Ensure you have required packages, and then run the notebook
-
-
-## FILE INFO
------------------------------------------------------------------------------------------------------
-Explanations of the different files used in the project
-* `code/`: A directory containing our implementation code for each model 
-* `results/`: A directory containing the results of our re-implementation
-* `poster/`: A directory containing a PDF of the poster related to the paper which we presented in the course
-* `report/`: A PDF of a paper style final report that complements our poster
-* `LICENSE`: A file specifying the license under which your code is released (e.g., MIT,
-Apache 2.0).
-* `.gitignore`: A file specifying files or directories that should be ignored by Git
-
+   
     
 ## INSIGHTS 
 -----------------------------------------------------------------------------------------------------
